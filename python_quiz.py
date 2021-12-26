@@ -1,7 +1,7 @@
 from tkinter import *
  
 
-from tkinter import messagebox as mb
+from tkinter import messagebox as mb #For the message box with the results at the end
 from PIL import ImageTk, Image #for the Image of Harel
 
 import json
