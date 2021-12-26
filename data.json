@@ -1,24 +1,42 @@
 {
-    "question": [
-     "Q1. What did Kein do to Hevel?"
+  "question": [
+    "Q1. What did Kien do to Hevel?",
+    "Q2. Which tool did Kien use to kill Hevel?",
+    "Q3. What is the meaning of the story?",
+    "Q4. Where did this all happen?"
+  ],
+  "answer": [
+    1,
+    2,
+    3,
+    2
+  ],
+  "options": [
+
+    ["He was a good",
+      "He was a bad",
+      "He was a good",
+      "He was a bad"
     ],
-    "answer": [
-     1
+
+    ["a knife",
+      "a gun",
+      "a knife",
+      "a gun"
     ],
-    "options": [
-  
-      [
-        "Killed him",
-        "Killed him and his family",
-        "Killed him and his family and his friends",
-        "Killed him and his family and his friends and his enemies." 
-      ],
-      [
-      ],
-      [
-        
-      ],
-      [
-      ]
+
+    ["He was a good",
+      "He was a bad",
+      "He was a good",
+      "He was a bad"
+    ],
+
+    ["He was a good",
+      "He was a bad",
+      "He was a good",
+      "He was a bad"
     ]
-  }
+    ]
+
+}
+    

@@ -1,8 +1,8 @@
 from tkinter import *
  
 
-from tkinter import messagebox as mb #For the message box with the results at the end
-from PIL import ImageTk, Image #for the Image of Harel
+from tkinter import messagebox as mb # For the result message box
+from PIL import ImageTk, Image
 
 import json
  
@@ -192,7 +192,7 @@ gui = Tk()
  
 # set the size of the GUI Window
 gui.geometry("800x450")
-image1 = Image.open("הראל ברוש.png")
+image1 = Image.open("picture.png")
 test = ImageTk.PhotoImage(image1)
 
 label1 = Label(image=test)
