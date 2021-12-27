@@ -78,8 +78,8 @@ class Quiz:
 
 
     # This method checks the Answer after we click on Next.
+
     def check_ans(self, q_no):
-         
         # checks for if the selected option is correct
         if self.opt_selected.get() == answer[q_no]:
             # if the option is correct it return true
@@ -87,20 +87,49 @@ class Quiz:
             pygame.mixer.music.load("success-sound.mp3")
             pygame.mixer.music.play(loops=0)
 
+
+
             image = cv2.imread("happy.png")
             image = cv2.resize(image, (960, 540))
             cv2.imshow("Window", image)
             cv2.waitKey(1250)
+            # The rock nodding video is played
+            cap = cv2.VideoCapture('the_rock.mp4')
+            while cap.isOpened():
+
+                ret, frame = cap.read()
+                if ret == True:
+                    cv2.imshow('frame', frame)
+                    if cv2.waitKey(25) & 0xFF == ord('q'):
+                        break
+                else:
+                    break
+            cap.release()
             cv2.destroyAllWindows()
             return True
         # if the answer is wrong, play the failure sound with a sad picture
         pygame.mixer.music.load("fail-sound.mp3")
         pygame.mixer.music.play(loops=0)
 
+
+
         image = cv2.imread("sad.png")
         image = cv2.resize(image, (960, 540))
         cv2.imshow("Window", image)
         cv2.waitKey(1250)
+
+        # Serious video is played
+        cap1 = cv2.VideoCapture('the_rock_angry.mp4')
+        while cap1.isOpened():
+
+            ret, frame = cap1.read()
+            if ret == True:
+                cv2.imshow('frame', frame)
+                if cv2.waitKey(25) & 0xFF == ord('q'):
+                    break
+            else:
+                break
+
         cv2.destroyAllWindows()
  
     # This method is used to check the answer of the
@@ -250,8 +279,8 @@ def play():
     pygame.mixer.music.play(loops=0)
 
 
-play()
 
+play()
 # set the title of the Window
 gui.title("Tannach Quiz")
  
