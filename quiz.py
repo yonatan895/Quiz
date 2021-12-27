@@ -1,5 +1,7 @@
 from tkinter import *
-import pygame 
+import pygame
+
+import cv2
  
 
 from tkinter import messagebox as mb # For the result message box
@@ -72,7 +74,7 @@ class Quiz:
     
 
 
-    
+
 
     # This method checks the Answer after we click on Next.
     def check_ans(self, q_no):
@@ -80,7 +82,24 @@ class Quiz:
         # checks for if the selected option is correct
         if self.opt_selected.get() == answer[q_no]:
             # if the option is correct it return true
+            pygame.mixer.music.load("success-sound.mp3")
+            pygame.mixer.music.play(loops=0)
+
+            image = cv2.imread("happy.png")
+            image = cv2.resize(image, (960, 540))
+            cv2.imshow("Window", image)
+            cv2.waitKey(1250)
+            cv2.destroyAllWindows()
             return True
+
+        pygame.mixer.music.load("fail-sound.mp3")
+        pygame.mixer.music.play(loops=0)
+
+        image = cv2.imread("sad.png")
+        image = cv2.resize(image, (960, 540))
+        cv2.imshow("Window", image)
+        cv2.waitKey(1250)
+        cv2.destroyAllWindows()
  
     # This method is used to check the answer of the
     # current question by calling the check_ans and question no.
