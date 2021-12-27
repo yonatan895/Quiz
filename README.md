@@ -1,7 +1,6 @@
 # Quiz
 Python quiz school project
 
-To run, download  the files as zip files, extract them to your ide
 
 Dependencies:
 
@@ -17,4 +16,14 @@ pip install opencv-python
 
 pip install pillow
 
-compile the file by typing in the console $python python_quiz.py
+
+
+How to compile the project:
+
+
+clone this git repository to your filesystem by typing "git clone https://github.com/yonatan895/Quiz" at yout ide terminal
+
+
+Type cd Quiz , and compile the program by typing in the console "python quiz.py"
+
+
