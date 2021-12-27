@@ -6,6 +6,7 @@ To run, download  the files as zip files, extract them to your ide
 Dependencies:
 
 tkinter
+
 opencv-python
 
 pillow
