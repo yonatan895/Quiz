@@ -10,6 +10,7 @@ from PIL import ImageTk, Image
 import json
  
 #class to define the components of the GUI
+
 class Quiz:
     
     def __init__(self):
@@ -243,8 +244,8 @@ def play():
     pygame.mixer.music.play(loops=0)
 
 
- 
 play()
+
 # set the title of the Window
 gui.title("Tannach Quiz")
  
