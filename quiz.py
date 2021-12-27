@@ -83,6 +83,7 @@ class Quiz:
         # checks for if the selected option is correct
         if self.opt_selected.get() == answer[q_no]:
             # if the option is correct it return true
+            # If the answer is correct, play the success sound with a happy picture
             pygame.mixer.music.load("success-sound.mp3")
             pygame.mixer.music.play(loops=0)
 
@@ -92,7 +93,7 @@ class Quiz:
             cv2.waitKey(1250)
             cv2.destroyAllWindows()
             return True
-
+        # if the answer is wrong, play the failure sound with a sad picture
         pygame.mixer.music.load("fail-sound.mp3")
         pygame.mixer.music.play(loops=0)
 
@@ -225,10 +226,14 @@ class Quiz:
    
    
 # Create a GUI Window
+
+
 gui = Tk()
  
 # set the size of the GUI Window
 gui.geometry("800x450")
+
+#Picture of Harel
 image1 = Image.open("picture.png")
 test = ImageTk.PhotoImage(image1)
 
@@ -238,6 +243,7 @@ label1.image = test
 label1.place(x=200, y=0)
 
 pygame.mixer.init()
+
 
 def play():
     pygame.mixer.music.load("the wok.mp3")
