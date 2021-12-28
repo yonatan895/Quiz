@@ -1,29 +1,24 @@
 from tkinter import *
 import pygame
-
 import cv2
- 
-
+from time import sleep
 from tkinter import messagebox as mb # For the result message box
 from PIL import ImageTk, Image
-
 import json
- 
-#class to define the components of the GUI
 
+
+# class to define the components of the GUI
 class Quiz:
-    
+
     def __init__(self):
          
         # set question number to 0
         self.q_no=0
-        
-         
+
         # assigns ques to the display_question function to update later.
         self.display_title()
         self.display_question()
-        
-         
+
         # opt_selected holds an integer value which is used for
         # selected option in a question.
         self.opt_selected=IntVar()
@@ -43,10 +38,7 @@ class Quiz:
          
         # keep a counter of correct answers
         self.correct=0
-        
- 
-    
-   
+
 
 
     # This method is used to display the result
@@ -75,10 +67,7 @@ class Quiz:
     
 
 
-
-
     # This method checks the Answer after we click on Next.
-
     def check_ans(self, q_no):
         # checks for if the selected option is correct
         if self.opt_selected.get() == answer[q_no]:
@@ -86,8 +75,6 @@ class Quiz:
             # If the answer is correct, play the success sound with a happy picture
             pygame.mixer.music.load("success-sound.mp3")
             pygame.mixer.music.play(loops=0)
-
-
 
             image = cv2.imread("happy.png")
             image = cv2.resize(image, (960, 540))
@@ -98,7 +85,7 @@ class Quiz:
             while cap.isOpened():
 
                 ret, frame = cap.read()
-                if ret == True:
+                if ret:
                     cv2.imshow('frame', frame)
                     if cv2.waitKey(25) & 0xFF == ord('q'):
                         break
@@ -106,12 +93,15 @@ class Quiz:
                     break
             cap.release()
             cv2.destroyAllWindows()
+
+            # load the background music again
+            pygame.mixer.music.load("background.mp3")
+            pygame.mixer.music.play(loops=0)
             return True
+
         # if the answer is wrong, play the failure sound with a sad picture
         pygame.mixer.music.load("fail-sound.mp3")
         pygame.mixer.music.play(loops=0)
-
-
 
         image = cv2.imread("sad.png")
         image = cv2.resize(image, (960, 540))
@@ -123,7 +113,7 @@ class Quiz:
         while cap1.isOpened():
 
             ret, frame = cap1.read()
-            if ret == True:
+            if ret:
                 cv2.imshow('frame', frame)
                 if cv2.waitKey(25) & 0xFF == ord('q'):
                     break
@@ -131,6 +121,9 @@ class Quiz:
                 break
 
         cv2.destroyAllWindows()
+        # load the background music again
+        pygame.mixer.music.load("background.mp3")
+        pygame.mixer.music.play(loops=0)
  
     # This method is used to check the answer of the
     # current question by calling the check_ans and question no.
@@ -275,15 +268,17 @@ pygame.mixer.init()
 
 
 def play():
-    pygame.mixer.music.load("the wok.mp3")
+    pygame.mixer.music.load("Clash_Intro.mp3")
     pygame.mixer.music.play(loops=0)
-
+    sleep(2)
+    pygame.mixer.music.load("background.mp3")
+    pygame.mixer.music.play(loops=0)
 
 
 play()
 # set the title of the Window
 gui.title("Tannach Quiz")
- 
+
 # get the data from the json file
 with open('data.json') as f:
     data = json.load(f)
