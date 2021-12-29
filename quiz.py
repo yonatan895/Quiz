@@ -80,6 +80,7 @@ class Quiz:
             image = cv2.resize(image, (960, 540))
             cv2.imshow("Window", image)
             cv2.waitKey(1250)
+            cv2.destroyAllWindows()
             # The rock nodding video is played
             cap = cv2.VideoCapture('the_rock.mp4')
             while cap.isOpened():
@@ -95,7 +96,7 @@ class Quiz:
             cv2.destroyAllWindows()
 
             # load the background music again
-            pygame.mixer.music.load("background.mp3")
+            pygame.mixer.music.load("background_copy.mp3")
             pygame.mixer.music.play(loops=0)
             return True
 
@@ -107,6 +108,7 @@ class Quiz:
         image = cv2.resize(image, (960, 540))
         cv2.imshow("Window", image)
         cv2.waitKey(1250)
+        cv2.destroyAllWindows()
 
         # Serious video is played
         cap1 = cv2.VideoCapture('the_rock_angry.mp4')
@@ -122,7 +124,7 @@ class Quiz:
 
         cv2.destroyAllWindows()
         # load the background music again
-        pygame.mixer.music.load("background.mp3")
+        pygame.mixer.music.load("background_copy.mp3")
         pygame.mixer.music.play(loops=0)
  
     # This method is used to check the answer of the
@@ -271,7 +273,7 @@ def play():
     pygame.mixer.music.load("Clash_Intro.mp3")
     pygame.mixer.music.play(loops=0)
     sleep(2)
-    pygame.mixer.music.load("background.mp3")
+    pygame.mixer.music.load("background_copy.mp3")
     pygame.mixer.music.play(loops=0)
 
 
