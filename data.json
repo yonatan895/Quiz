@@ -1,6 +1,6 @@
 {
   "question": [
-    "Q1. What did Kien do to Hevel?",
+    "Q1. What did Kain do to Hevel?",
     "Q2. Which tool did Kien use to kill Hevel?",
     "Q3. What is the meaning of the story?",
     "Q4. Where did this all happen?"
@@ -13,28 +13,31 @@
   ],
   "options": [
 
-    ["He was a good",
-      "He was a bad",
-      "He was a good",
-      "He was a bad"
+    ["He killed him",
+      "He gave him soup",
+      "He hit him with a rock",
+      "He hugged him"
     ],
 
-    ["a knife",
-      "a gun",
-      "a knife",
-      "a gun"
+    [
+      "A knife",
+      "It is not said",
+      "A ruler",
+      "A steel sword"
     ],
 
-    ["He was a good",
-      "He was a bad",
-      "He was a good",
-      "He was a bad"
+    [
+      "Kain should have given god a better offering",
+      "Hevel was annoying",
+      "Murder is bad",
+      "None of the above"
     ],
 
-    ["He was a good",
-      "He was a bad",
-      "He was a good",
-      "He was a bad"
+    [
+      "In Jerusalem",
+      "We don`t know",
+      "In Spain",
+      "In heaven"
     ]
     ]
 

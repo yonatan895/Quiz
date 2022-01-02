@@ -209,7 +209,7 @@ class Quiz:
     def display_title(self):
          
         # The title to be shown
-        title = Label(gui, text="Harel asks:",
+        title = Label(gui, text="Efi The Tiger asks:",
         width=50, bg="green",fg="white", font=("italic", 20, "bold"))
          
         # place of the title
@@ -258,13 +258,13 @@ gui = Tk()
 gui.geometry("800x450")
 
 #Picture of Harel
-image1 = Image.open("picture.png")
+image1 = Image.open("picture_sec.png")
 test = ImageTk.PhotoImage(image1)
 
 label1 = Label(image=test)
 label1.image = test
 
-label1.place(x=200, y=0)
+label1.place(x=150, y=50)
 
 pygame.mixer.init()
 
