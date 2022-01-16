@@ -57,11 +57,15 @@ class Quiz:
          
         # Shows a message box to display the result
         if wrong_count < self.correct:
+            pygame.mixer.music.load("nice.mp3")
+            pygame.mixer.music.play(loops=0)
             mb.showinfo("Pretty good!", f"{result}\n{correct}\n{wrong}")
             
             
         else:
-            mb.showwarning("Trash!", f"{result}\n{wrong}\n{correct}")
+            pygame.mixer.music.load("trash.mp3")
+            pygame.mixer.music.play(loops=0)
+            mb.showinfo("Trash!", f"{result}\n{wrong}\n{correct}")
            
             
     
@@ -96,7 +100,7 @@ class Quiz:
             cv2.destroyAllWindows()
 
             # load the background music again
-            pygame.mixer.music.load("background_copy.mp3")
+            pygame.mixer.music.load("background.mp3")
             pygame.mixer.music.play(loops=0)
             return True
 
@@ -124,7 +128,7 @@ class Quiz:
 
         cv2.destroyAllWindows()
         # load the background music again
-        pygame.mixer.music.load("background_copy.mp3")
+        pygame.mixer.music.load("background.mp3")
         pygame.mixer.music.play(loops=0)
  
     # This method is used to check the answer of the
@@ -274,7 +278,7 @@ def play():
     pygame.mixer.music.load("Clash_Intro.mp3")
     pygame.mixer.music.play(loops=0)
     sleep(2)
-    pygame.mixer.music.load("background_copy.mp3")
+    pygame.mixer.music.load("background.mp3")
     pygame.mixer.music.play(loops=0)
 
 

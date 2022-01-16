@@ -1,29 +1,80 @@
 {
   "question": [
-    "Q1. What did Kain do to Hevel?",
-    "Q2. Which tool did Kien use to kill Hevel?",
-    "Q3. What is the meaning of the story?",
-    "Q4. Where did this all happen?"
+    "Q1. What is Cain's job?",
+    "Q2. What is Hevel's job?",
+    "Q3. What did Hevel bring to god?",
+    "Q4. What did Cain bring to god?",
+    "Q5. What did Cain do to Hevel?",
+    "Q6. Where did this story happen?",
+    "Q7. Which tool did Cain use to kill Hevel?",
+    "Q8. What is the meaning of the story?",
+    "Q9. Why god didn't intervene in order to stop Cain?",
+    "Q10. How Cain died?",
+    "Q11. Did you enjoyed??"
   ],
   "answer": [
     1,
+    3,
+    4,
+    1,
+    2,
     2,
     3,
-    2
+    4,
+    3,
+    1,
+    3
   ],
   "options": [
 
-    ["He killed him",
-      "He gave him soup",
-      "He hit him with a rock",
-      "He hugged him"
+    [
+      "Shepherd",
+      "House Keeper",
+      "Hradware Engineer",
+      "Farmer"
     ],
 
     [
-      "A knife",
-      "It is not said",
-      "A ruler",
-      "A steel sword"
+      "Shepherd",
+      "Lawyer",
+      "Farmer",
+      "Software Engineer"
+    ],
+
+
+    [
+      "He's best fruits from the earth",
+      "Hamburger",
+      "Pizza",
+      "He's best sheep and goats"
+    ],
+
+    [
+      "He's best fruits from the earth",
+      "Cinese",
+      "Mansaf",
+      "He's best sheep and goats"
+    ],
+
+    [
+      "He gave him hurtful hug",
+      "He killed him",
+      "He slapped him",
+      "He yelled at him"
+    ],
+
+    [
+      "In Jerusalem",
+      "We don`t know",
+      "In Spain",
+      "In heaven"
+    ],
+
+    [
+      "A Knife",
+      "A Shotgun",
+      "It didn't appeare in the story",
+      "A M16"
     ],
 
     [
@@ -34,12 +85,25 @@
     ],
 
     [
-      "In Jerusalem",
-      "We don`t know",
-      "In Spain",
-      "In heaven"
+      "He was very lazy",
+      "God didn't like Hevel",
+      "He wanted to teach Cain a lesson",
+      "He didn't care"
+    ],
+
+    [
+      "A blind man accidently killed him",
+      "By Hevel",
+      "By the angel of death, sent by god",
+      "By an ancient beast"
+    ],
+
+    [
+      "Yes!",
+      "NO :(",
+      "Of Course :)"
     ]
-    ]
+  ]
 
 }
     
